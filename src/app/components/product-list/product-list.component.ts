@@ -15,4 +15,5 @@ export class ProductListComponent {
 
   constructor(private _productsService: ProductsService) {
   }
+
 }
