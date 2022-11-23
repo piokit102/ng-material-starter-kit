@@ -15,6 +15,8 @@ import {SelectBoxServiceModule} from "./services/select-box.service-module";
 import {CheckboxCategoryComponent} from "./components/checkbox-category/checkbox-category.component";
 import {CheckboxCategoryComponentModule} from "./components/checkbox-category/checkbox-category.component-module";
 import {CheckboxCategoryServiceModule} from "./services/checkbox-category.service-module";
+import {MenuCategoryComponent} from "./components/menu-category/menu-category.component";
+import {MenuCategoryComponentModule} from "./components/menu-category/menu-category.component-module";
 
 @NgModule({
   imports: [RouterModule.forRoot(
@@ -22,10 +24,11 @@ import {CheckboxCategoryServiceModule} from "./services/checkbox-category.servic
       {path: 'categories', component:CategoriesListComponent},
       {path: 'selectBox', component:SelectBoxComponent},
       {path: 'checkBox', component:CheckboxCategoryComponent},
+      {path: 'menu', component:MenuCategoryComponent},
       {path: 'crypto', component:CryptoListComponent}]),
       ProductListComponentModule, ProductsServiceModule, CategoriesListComponentModule, CategoriesServiceModule,
     CryptoListComponentModule,CryptoServiceModule, SelectBoxComponentModule, SelectBoxServiceModule,
-    CheckboxCategoryComponentModule, CheckboxCategoryServiceModule],
+    CheckboxCategoryComponentModule, CheckboxCategoryServiceModule, MenuCategoryComponentModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

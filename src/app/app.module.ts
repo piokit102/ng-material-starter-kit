@@ -10,6 +10,7 @@ import {CategoriesListComponentModule} from "./components/categories-list/catego
 import {CryptoListComponentModule} from "./components/crypto-list/crypto-list.component-module";
 import {SelectBoxComponentModule} from "./components/select-box/select-box.component-module";
 import {CheckboxCategoryComponentModule} from "./components/checkbox-category/checkbox-category.component-module";
+import {MenuCategoryComponentModule} from "./components/menu-category/menu-category.component-module";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {CheckboxCategoryComponentModule} from "./components/checkbox-category/ch
     CategoriesListComponentModule,
     CryptoListComponentModule,
     SelectBoxComponentModule,
-    CheckboxCategoryComponentModule
+    CheckboxCategoryComponentModule,
+    MenuCategoryComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
