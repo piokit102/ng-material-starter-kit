@@ -1,0 +1,20 @@
+<style>
+  mat-form-field{
+    margin: 50px;
+    font-size: 10px;
+    width: 300px;
+    height: 1000px;
+  }
+
+
+</style>
+<mat-form-field>
+  <mat-label>Choose an option</mat-label>
+<mat-select>
+  <mat-option role="listitem" *ngFor="let item of list$ | async">{{item.localName}}</mat-option>
+</mat-select>
+</mat-form-field>
+
+
+
+
