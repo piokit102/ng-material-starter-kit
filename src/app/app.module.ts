@@ -9,21 +9,23 @@ import {ProductListComponentModule} from "./components/product-list/product-list
 import {CategoriesListComponentModule} from "./components/categories-list/categories-list.component-module";
 import {CryptoListComponentModule} from "./components/crypto-list/crypto-list.component-module";
 import {SelectBoxComponentModule} from "./components/select-box/select-box.component-module";
+import {CheckboxCategoryComponentModule} from "./components/checkbox-category/checkbox-category.component-module";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        HttpClientModule,
-        ProductListComponentModule,
-        CategoriesListComponentModule,
-        CryptoListComponentModule,
-        SelectBoxComponentModule
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    ProductListComponentModule,
+    CategoriesListComponentModule,
+    CryptoListComponentModule,
+    SelectBoxComponentModule,
+    CheckboxCategoryComponentModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,0 +1,12 @@
+<style>
+
+mat-checkbox{
+  margin-right: 5px;
+}
+</style>
+
+<mat-card>
+<mat-card-title>Categories</mat-card-title>
+<br/>
+<mat-checkbox role="listitem" *ngFor="let item of list$ | async"> {{item}} </mat-checkbox>
+  </mat-card>
