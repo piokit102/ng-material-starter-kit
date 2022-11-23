@@ -1,0 +1,14 @@
+<style>
+  mat-chip{
+    padding: 5px;
+    border-radius: 10px;
+  }
+
+
+</style>
+
+<div id="div1">
+  <mat-chip-list>
+    <mat-chip role="listitem" *ngFor="let item of list$ | async">{{item.symbol}}</mat-chip>
+  </mat-chip-list>
+</div>

@@ -6,12 +6,16 @@ import { ProductsServiceModule } from './services/products.service-module';
 import {CategoriesListComponent} from "./components/categories-list/categories-list.component";
 import {CategoriesListComponentModule} from "./components/categories-list/categories-list.component-module";
 import {CategoriesServiceModule} from "./services/categories.service-module";
+import {CryptoListComponent} from "./components/crypto-list/crypto-list.component";
+import {CryptoListComponentModule} from "./components/crypto-list/crypto-list.component-module";
+import {CryptoServiceModule} from "./services/crypto.service-module";
 
 @NgModule({
   imports: [RouterModule.forRoot(
     [{ path: 'products', component: ProductListComponent },
-      {path: 'categories', component:CategoriesListComponent}]),
-      ProductListComponentModule, ProductsServiceModule, CategoriesListComponentModule, CategoriesServiceModule],
+      {path: 'categories', component:CategoriesListComponent},
+      {path: 'crypto', component:CryptoListComponent}]),
+      ProductListComponentModule, ProductsServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CryptoListComponentModule,CryptoServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
