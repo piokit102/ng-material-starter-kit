@@ -11,23 +11,27 @@ import {CryptoListComponentModule} from "./components/crypto-list/crypto-list.co
 import {SelectBoxComponentModule} from "./components/select-box/select-box.component-module";
 import {CheckboxCategoryComponentModule} from "./components/checkbox-category/checkbox-category.component-module";
 import {MenuCategoryComponentModule} from "./components/menu-category/menu-category.component-module";
+import {ProductTableComponentModule} from "./components/product-table/product-table.component-module";
+import {NewTableComponentModule} from "./components/new-table/new-table.component-module";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    ProductListComponentModule,
-    CategoriesListComponentModule,
-    CryptoListComponentModule,
-    SelectBoxComponentModule,
-    CheckboxCategoryComponentModule,
-    MenuCategoryComponentModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        ProductListComponentModule,
+        CategoriesListComponentModule,
+        CryptoListComponentModule,
+        SelectBoxComponentModule,
+        CheckboxCategoryComponentModule,
+        MenuCategoryComponentModule,
+        ProductTableComponentModule,
+        NewTableComponentModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

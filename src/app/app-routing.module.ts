@@ -17,6 +17,10 @@ import {CheckboxCategoryComponentModule} from "./components/checkbox-category/ch
 import {CheckboxCategoryServiceModule} from "./services/checkbox-category.service-module";
 import {MenuCategoryComponent} from "./components/menu-category/menu-category.component";
 import {MenuCategoryComponentModule} from "./components/menu-category/menu-category.component-module";
+import {ProductTableComponent} from "./components/product-table/product-table.component";
+import {ProductTableComponentModule} from "./components/product-table/product-table.component-module";
+import {NewTableComponent} from "./components/new-table/new-table.component";
+import {NewTableComponentModule} from "./components/new-table/new-table.component-module";
 
 @NgModule({
   imports: [RouterModule.forRoot(
@@ -25,10 +29,12 @@ import {MenuCategoryComponentModule} from "./components/menu-category/menu-categ
       {path: 'selectBox', component:SelectBoxComponent},
       {path: 'checkBox', component:CheckboxCategoryComponent},
       {path: 'menu', component:MenuCategoryComponent},
+      {path: 'table', component:ProductTableComponent},
+      {path: 'newtable', component:NewTableComponent},
       {path: 'crypto', component:CryptoListComponent}]),
       ProductListComponentModule, ProductsServiceModule, CategoriesListComponentModule, CategoriesServiceModule,
     CryptoListComponentModule,CryptoServiceModule, SelectBoxComponentModule, SelectBoxServiceModule,
-    CheckboxCategoryComponentModule, CheckboxCategoryServiceModule, MenuCategoryComponentModule],
+    CheckboxCategoryComponentModule, CheckboxCategoryServiceModule, MenuCategoryComponentModule, ProductTableComponentModule, NewTableComponentModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
