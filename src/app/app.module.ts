@@ -13,6 +13,7 @@ import {CheckboxCategoryComponentModule} from "./components/checkbox-category/ch
 import {MenuCategoryComponentModule} from "./components/menu-category/menu-category.component-module";
 import {NewTableComponentModule} from "./components/new-table/new-table.component-module";
 import {ProductFormComponentModule} from "./components/product-form/product-form.component-module";
+import {EmployeeFormComponentModule} from "./components/employee-form/employee-form.component-module";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import {ProductFormComponentModule} from "./components/product-form/product-form
         CheckboxCategoryComponentModule,
         MenuCategoryComponentModule,
         NewTableComponentModule,
-        ProductFormComponentModule
+        ProductFormComponentModule,
+        EmployeeFormComponentModule
     ],
   providers: [],
   bootstrap: [AppComponent]

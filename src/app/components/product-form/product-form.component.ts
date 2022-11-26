@@ -23,7 +23,7 @@ export class ProductFormComponent {
 
   onProductFormSubmitted(productForm: FormGroup): void {
     this._productsService.create({
-      title: productForm.get('title')?.value,
+      title: productForm.get('zzzzzzzzzz')?.value,
       category: productForm.get('category')?.value,
       price: productForm.get('price')?.value,
       description: productForm.get('description')?.value,
