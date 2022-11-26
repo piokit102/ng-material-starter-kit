@@ -15,27 +15,29 @@ import {NewTableComponentModule} from "./components/new-table/new-table.componen
 import {ProductFormComponentModule} from "./components/product-form/product-form.component-module";
 import {EmployeeFormComponentModule} from "./components/employee-form/employee-form.component-module";
 import {LoginComponentModule} from "./components/login/login.component-module";
+import {RegisterFormComponentModule} from "./components/register-form/register-form.component-module";
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    ProductListComponentModule,
-    CategoriesListComponentModule,
-    CryptoListComponentModule,
-    SelectBoxComponentModule,
-    CheckboxCategoryComponentModule,
-    MenuCategoryComponentModule,
-    NewTableComponentModule,
-    ProductFormComponentModule,
-    EmployeeFormComponentModule,
-    LoginComponentModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        ProductListComponentModule,
+        CategoriesListComponentModule,
+        CryptoListComponentModule,
+        SelectBoxComponentModule,
+        CheckboxCategoryComponentModule,
+        MenuCategoryComponentModule,
+        NewTableComponentModule,
+        ProductFormComponentModule,
+        EmployeeFormComponentModule,
+        LoginComponentModule,
+        RegisterFormComponentModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
