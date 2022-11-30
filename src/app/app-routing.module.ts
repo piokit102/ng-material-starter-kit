@@ -11,6 +11,11 @@ import { ProductFormComponent } from './components/product-form/product-form.com
 import { EmployeeFormComponent } from './components/employee-form/employee-form.component';
 import { LoginComponent } from './components/login/login.component';
 import { CatFactComponent } from './components/cat-fact/cat-fact.component';
+import { AgeComponent } from './components/age/age.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
+import { CartsComponent } from './components/carts/carts.component';
+import { UsersComponent } from './components/users/users.component';
+import { UsazipComponent } from './components/usazip/usazip.component';
 import { ProductListComponentModule } from './components/product-list/product-list.component-module';
 import { ProductsServiceModule } from './services/products.service-module';
 import { CategoriesListComponentModule } from './components/categories-list/categories-list.component-module';
@@ -32,10 +37,43 @@ import { RegisterFormComponentModule } from './components/register-form/register
 import { RegisterServiceModule } from './services/register.service-module';
 import { CatsFactsServiceModule } from './services/cats-facts.service-module';
 import { CatFactComponentModule } from './components/cat-fact/cat-fact.component-module';
+import { AgeComponentModule } from './components/age/age.component-module';
+import { AgeServiceModule } from './services/age.service-module';
+import { ProductDetailsComponentModule } from './components/product-details/product-details.component-module';
+import { CartsComponentModule } from './components/carts/carts.component-module';
+import { CartServiceModule } from './services/cart.service-module';
+import { UsersComponentModule } from './components/users/users.component-module';
+import { UsersServiceModule } from './services/users.service-module';
+import { UsazipComponentModule } from './components/usazip/usazip.component-module';
+import { USaServiceModule } from './services/usa.service-module';
 
 @NgModule({
   imports: [RouterModule.forRoot(
-    [{ path: 'products', component: ProductListComponent }, { path: 'categories', component: CategoriesListComponent }, { path: 'selectBox', component: SelectBoxComponent }, { path: 'checkBox', component: CheckboxCategoryComponent }, { path: 'menu', component: MenuCategoryComponent }, { path: 'newTable', component: NewTableComponent }, { path: 'crypto', component: CryptoListComponent }, { path: 'create-product', component: ProductFormComponent }, { path: 'employee', component: EmployeeFormComponent }, { path: 'loginForm', component: LoginComponent }, { path: 'fact-cat', component: CatFactComponent }]), ProductListComponentModule, ProductsServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CryptoListComponentModule, CryptoServiceModule, SelectBoxComponentModule, SelectBoxServiceModule, CheckboxCategoryComponentModule, CheckboxCategoryServiceModule, MenuCategoryComponentModule, NewTableComponentModule, ProductFormComponentModule, EmployeeFormComponentModule, EmployeeServiceModule, LoginComponentModule, LoginServiceModule, RegisterFormComponentModule, RegisterServiceModule, CatsFactsServiceModule, CatFactComponentModule],
+    [{path: 'products', component: ProductListComponent}, {
+      path: 'categories',
+      component: CategoriesListComponent
+    }, {path: 'selectBox', component: SelectBoxComponent}, {
+      path: 'checkBox',
+      component: CheckboxCategoryComponent
+    }, {path: 'menu', component: MenuCategoryComponent}, {
+      path: 'newTable',
+      component: NewTableComponent
+    }, {path: 'crypto', component: CryptoListComponent}, {
+      path: 'create-product',
+      component: ProductFormComponent
+    }, {path: 'employee', component: EmployeeFormComponent}, {
+      path: 'loginForm',
+      component: LoginComponent
+    }, {path: 'fact-cat', component: CatFactComponent}, {
+      path: 'age/:names',
+      component: AgeComponent
+    }, {path: 'products/:x', component: ProductDetailsComponent}, {
+      path: 'carts/:id',
+      component: CartsComponent
+    }, {path: 'users/:id', component: UsersComponent}, {
+      path: 'genderof/:id',
+      component: UsazipComponent
+    }]), ProductListComponentModule, ProductsServiceModule, CategoriesListComponentModule, CategoriesServiceModule, CryptoListComponentModule, CryptoServiceModule, SelectBoxComponentModule, SelectBoxServiceModule, CheckboxCategoryComponentModule, CheckboxCategoryServiceModule, MenuCategoryComponentModule, NewTableComponentModule, ProductFormComponentModule, EmployeeFormComponentModule, EmployeeServiceModule, LoginComponentModule, LoginServiceModule, RegisterFormComponentModule, RegisterServiceModule, CatsFactsServiceModule, CatFactComponentModule, AgeComponentModule, AgeServiceModule, ProductDetailsComponentModule, CartsComponentModule, CartServiceModule, UsersComponentModule, UsersServiceModule, UsazipComponentModule, USaServiceModule],
   exports: [RouterModule]
 })
 export class AppRoutingModule {

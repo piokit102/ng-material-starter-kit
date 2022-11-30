@@ -1,0 +1,2 @@
+<h1>Cart</h1>
+<ng-container *ngIf="cartsDetails$ | async as item">You have {{ item.products.length }} products in the cart</ng-container>

@@ -16,4 +16,8 @@ export class ProductsService {
     return this._httpClient.post<ProductModel>('https://fakestoreapi.com/products', product);
   }
 
+  getOne(x:number): Observable<ProductModel> {
+    return this._httpClient.get<ProductModel>('https://fakestoreapi.com/products/'+x);
+  }
+
 }

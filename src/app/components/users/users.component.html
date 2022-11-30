@@ -1,0 +1,9 @@
+<style>
+  p{
+  font-size: 20px;
+}</style>
+
+<h1>Users details</h1>
+
+<ng-container *ngIf="usersDetails$ | async as item"><p>{{ item.name.firstname }} {{ item.name.lastname }}</p>
+  <br> {{ item.email }}</ng-container>
