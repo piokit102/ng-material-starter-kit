@@ -16,6 +16,7 @@ import {ProductFormComponentModule} from "./components/product-form/product-form
 import {EmployeeFormComponentModule} from "./components/employee-form/employee-form.component-module";
 import {LoginComponentModule} from "./components/login/login.component-module";
 import {RegisterFormComponentModule} from "./components/register-form/register-form.component-module";
+import {CatFactComponentModule} from "./components/cat-fact/cat-fact.component-module";
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import {RegisterFormComponentModule} from "./components/register-form/register-f
         ProductFormComponentModule,
         EmployeeFormComponentModule,
         LoginComponentModule,
-        RegisterFormComponentModule
+        RegisterFormComponentModule,
+        CatFactComponentModule
     ],
   providers: [],
   bootstrap: [AppComponent]

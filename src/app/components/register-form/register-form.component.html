@@ -1,4 +1,18 @@
-<form [formGroup]="registerForm" (ngSubmit)="onRegisterFormSubmitted(registerForm)">
+<style>
+  #di1{
+    float: left;
+    margin-top:250px;
+    margin-left:250px;
+  }
+  #f1
+  {
+    float: left;
+
+  }
+</style>
+
+
+<form id="f1" [formGroup]="registerForm" (ngSubmit)="onRegisterFormSubmitted(registerForm)">
   <div>
     <mat-form-field appearance="fill">
       <mat-label>Email</mat-label>
@@ -73,3 +87,9 @@
     <button type="submit" mat-raised-button color="primary">Submit</button>
   </div>
 </form>
+<div id="di1" class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Bardzo dobrze</h4>
+  <p>Udało Ci się pomyślnie zarejestrować. Wszystkie niezbędne informacje wysłaliśmy do Ciebie mailem.</p>
+  <hr>
+  <p class="mb-0">Pozdrawia Kita Company</p>
+</div>
